@@ -1,18 +1,9 @@
-.slider {
+/* .slider {
   margin: 80px auto;
   width: 1000px;
-}
+} */
 
-.owl-theme .owl-nav.disabled + .owl-dots {
-  margin-top: -30px !important;
-  position: relative;
-}
-
-.owl-theme .owl-dots .owl-dot span {
-  width: 15px !important;
-  height: 15px !important;
-}
-
+/* Modal */
 .modal .modal-dialog .modal-content {
   border: none;
 }
@@ -52,88 +43,38 @@
   font-size: 16px;
 }
 
-.modal .modal-body form .btn-primary:hover{
-  background-color:#e9bb01 ;
+.modal .modal-body form .btn-primary:hover {
+  background-color: #e9bb01;
   border-color: #e9bb01;
 }
 
-.modal .modal-body form .btn-link{
+.modal .modal-body form .btn-link {
   color: #990;
-  margin:15px;
+  margin: 15px;
 }
 
-.modal .modal-body form .btn-link:hover{
+.modal .modal-body form .btn-link:hover {
   color: #898900;
   background-color: none;
 }
 
-.section-banner{
-  width: 101%;
-}
-.slide {
-  width: 4%;
-  float: left;
-  background-color: #eee;
-  height: 260px;
-  font-weight: bold;
-  cursor: pointer;
-  background-size: cover;
-  background-position: center;
-  transition: 0.3s ease;
+/* carousel */
+
+.owl-theme .owl-nav.disabled + .owl-dots {
+  margin-top: -30px !important;
+  position: relative;
 }
 
-h3 {
-  transform: rotate(90deg);
-  text-transform: uppercase;
-  white-space: nowrap;
-  margin-top: 30px !important;
-  color: #fff;
-  font-size: 1.35rem !important;
-}
-
-.tab-1 {
-  background-color: blue;
-}
-
-.tab-2 {
-  background-color: red;
-}
-
-.tab-3 {
-  background-color: green;
-}
-
-.tab-4 {
-  background-color: gray;
-}
-
-.tab-5 {
-  background-color: aquamarine;
-}
-
-.info {
-  border-left: 1px solid #ccc;
-  float: left;
-  background-color: #ddd;
-  height: 250px;
-  width: 0;
-  display: none;
-}
-
-.info .info-banner {
-  width: 100%;
-  height: 260px;
-  object-fit: inherit;
-}
-
-main .sections {
-  margin: 30px 0px;
+.owl-theme .owl-dots .owl-dot span {
+  width: 15px !important;
+  height: 15px !important;
 }
 
 .owl-carousel .owl-item img {
   max-height: 260px;
 }
 
+/* accordion slider */
 @-webkit-keyframes infoIn {
   0% {
     opacity: 0;
@@ -262,28 +203,25 @@ main .sections {
 }
 
 .banner-slider figure h3 {
-  transform: rotate( 
-90deg);
-    text-transform: uppercase;
-    white-space: nowrap;
-    margin-bottom: 239px;
-    color: #fff;
-    font-size: 1.35rem !important;
-    margin-left: 54px;
-    width: 3px
+  transform: rotate(90deg);
+  text-transform: uppercase;
+  white-space: nowrap;
+  margin-bottom: 239px;
+  color: #fff;
+  font-size: 1.35rem !important;
+  margin-left: 46px;
+  width: 3px;
 }
 .banner-slider figure.on h3 {
-  transform: rotate(
-90deg);
-    text-transform: uppercase;
-    white-space: nowrap;
-    margin-bottom: 140px;
-    color: #fff;
-    font-size: 1.35rem !important;
-    margin-left: 2px;
-    width: 8%;
+  transform: rotate(90deg);
+  text-transform: uppercase;
+  white-space: nowrap;
+  margin-bottom: 140px;
+  color: #fff;
+  font-size: 1.35rem !important;
+  margin-left: 2px;
+  width: 8%;
 }
-
 
 .tab-1 {
   background-color: blue;
@@ -305,23 +243,49 @@ main .sections {
   background-color: aquamarine;
 }
 
-@media screen and (max-width: 800px) {
-  .banner-slider {
-    font-size: 1.3vw;
-  }
-  .banner-slider figure.on div {
-    padding: 20px;
-  }
-}
-@media screen and (max-width: 600px) {
-  .banner-slider {
-    font-size: 1.8vw;
-  }
-  .banner-slider figure.on div {
-    bottom: 5%;
-    left: 0;
-    right: 0;
-    width: auto;
+@media screen and (max-width: 1199px) {
+  .banner-slider figure h3{
+    margin-left: 30px;
   }
 }
 
+@media screen and (max-width: 992px) {
+  .banner-slider {
+    font-size: 1.3vw;
+  }
+
+  .banner-slider figure.on img {
+    width: 92.2%;
+    height: 100%;
+    object-fit: fill;
+    display: block;
+  }
+  .banner-slider figure.on h3 {
+    margin-bottom: 191px;
+    margin-left: 9px;
+    width: 6%;
+  }
+  .banner-slider figure h3 {
+    transform: rotate(90deg);
+    text-transform: uppercase;
+    white-space: nowrap;
+    margin-bottom: 242px;
+    color: #fff;
+    font-size: 1.35rem !important;
+    margin-left: 30px;
+    width: 3px;
+  }
+}
+
+
+@media screen and (max-width: 700px) {
+  .banner-slider {
+    font-size: 1.8vw;
+  }
+  .banner-slider figure.on img{
+    width: 91.7%;
+  }
+  .banner-slider figure h3{
+    margin-left: 23px;
+  }
+}

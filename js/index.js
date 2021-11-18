@@ -28,7 +28,7 @@ $(document).ready(function() {
     $(".banner-slider figure")
       .eq($item)
       .addClass("on");
-    $autoTransition = setInterval(transitionSlide, 3500);
+    $autoTransition = setInterval(transitionSlide, 5000);
   });
 });
 
